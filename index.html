@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Vinay — Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="All my links in one place." />
+  <meta name="theme-color" content="#111827" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Vinay — Links" />
+  <meta property="og:description" content="All my links in one place." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://<your-username>.github.io/og-image.jpg" />
+  <meta property="og:url" content="https://<your-username>.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #111827cc;
+      --text: #e5e7eb;
+      --muted: #a1a1aa;
+      --ring: #6366f1;
+      --btn: #1f2937;
+      --btn-hover: #374151;
+    }
+    @media (prefers-color-scheme: light){
+      :root { --bg:#f8fafc; --card:#ffffffcc; --text:#0f172a; --muted:#475569; --btn:#e5e7eb; --btn-hover:#d1d5db; --ring:#4f46e5; }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background:
+        radial-gradient(60vmax 60vmax at 10% -10%, #33415540, transparent 60%),
+        radial-gradient(60vmax 60vmax at 110% 10%, #1f293740, transparent 60%),
+        var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 640px;
+      background: var(--card);
+      backdrop-filter: blur(8px);
+      border: 1px solid #ffffff1a;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 30px #00000033;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      object-fit: cover; border: 2px solid #ffffff26;
+      display: block; margin: 0 auto 12px;
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 6px; }
+    .bio { color: var(--muted); margin: 0 0 6px; }
+    .loc { color: var(--muted); font-size: 0.95rem; }
+    .links { display: grid; gap: 12px; margin-top: 18px; }
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      text-decoration: none; color: var(--text); font-weight: 600;
+      background: var(--btn); padding: 14px 16px; border-radius: 12px;
+      border: 1px solid #ffffff1a;
+      transition: transform .06s ease, background .15s ease, border-color .15s ease;
+    }
+    .btn:hover { background: var(--btn-hover); transform: translateY(-1px); border-color: #ffffff33; }
+    .btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+    .btn svg { width: 20px; height: 20px; }
+    footer { margin-top: 18px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+    .badges { display:flex; gap:10px; justify-content:center; margin-top:8px; flex-wrap: wrap; }
+    .badge { font-size: 0.75rem; padding: 6px 10px; border-radius: 999px; border:1px dashed #ffffff26; color: var(--muted); }
+  </style>
+
+  <!-- (Optional) Google Analytics 4: replace G-XXXX with your ID
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-XXXX');
+  </script> -->
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <img class="avatar" src="avatar.jpg" alt="Portrait of Vinay" />
+      <h1>Vinay Jagannath</h1>
+      <p class="bio">Digital Analytics • GA4 • Adobe • Power BI</p>
+      <p class="loc" aria-label="location">Toronto, Canada</p>
+      <div class="badges">
+        <span class="badge">Open to work</span>
+        <span class="badge">TN-visa eligible</span>
+      </div>
+    </header>
+
+    <nav class="links" aria-label="Primary links">
+      <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <!-- LinkedIn icon -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46C22.3 7.74 24 10.1 24 14.06V24h-5v-8.6c0-2.05-.04-4.7-2.86-4.7-2.86 0-3.3 2.23-3.3 4.54V24H8z"/></svg>
+        LinkedIn
+      </a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">
+        <!-- File icon -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        Resume (PDF)
+      </a>
+      <a class="btn" href="https://public.tableau.com/app/profile/your-profile" target="_blank" rel="noopener" aria-label="Tableau Public">📊 Tableau Public</a>
+      <a class="btn" href="https://lookerstudio.google.com/u/0/navigation/reporting" target="_blank" rel="noopener" aria-label="Looker Studio">📈 Looker Studio</a>
+      <a class="btn" href="mailto:vinay@example.com" aria-label="Email">✉️ Email Me</a>
+      <a class="btn" href="https://github.com/<your-username>" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+      <!-- Add more as needed -->
+    </nav>
+
+    <footer>
+      <p>© <span id="y"></span> Vinay</p>
+    </footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
